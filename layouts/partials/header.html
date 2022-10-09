@@ -2,9 +2,12 @@
 			<div class="nav-container">
 				<a href="{{ "/" | relURL }}">
 					{{ if .IsPage }}
-						<h2 class="nav-title">{{ .Site.Title }}</h2>
+						<img src="{{ "/images/logo.png" | relURL }}"alt={{ .Site.Title }}>
+						<!-- <img src="{{ .Site.BaseURL }}images/logo.png" alt={{ .Site.Title }}> -->
 					{{ else }}
-						<h1 class="nav-title">{{ .Site.Title }}</h1>
+						<img src="{{ "/images/logo.png" | relURL }}"alt={{ .Site.Title }}>
+						<!-- <img src="{{ .Site.BaseURL }}images/logo.png" alt={{ .Site.Title }}> -->
+						<!-- <h1 class="nav-title">{{ .Site.Title }}</h1> -->
 					{{ end }}
 				</a>
 				{{ partial "header-menu.html" . }}
