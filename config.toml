@@ -1,10 +1,13 @@
-baseURL = 'https://www.lapuntanet.com.ar/'
-languageCode = 'es'
-title = "Primeros pasos con Hugo"
+baseURL = "https://www.lapuntanet.com.ar/"
+languageCode = "es"
+defaultContentLanguage = "es"
 theme = "tale"
 
 [Author]
   name = "Miguel Angel Alvarez"
+  
+[params]
+  css = ["css/estilos.css"]
 
 [menu]
   [[menu.main]]
@@ -12,10 +15,11 @@ theme = "tale"
 	name = "Contacto"
 	title = "Contacto"
 	url = "/contacto/"
-	weight = 0
+	weight = 1
   [[menu.main]]
 	identifier = "posts"
 	name = "Posts"
 	title = "Posts"
 	url = "/posts/"
-	weight = 0
+	weight = 2
+
